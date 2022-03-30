@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Dark Mode</title>
+</head>
+<body>
+     <header>
+         <nav class="navbar">
+                <div class="open"><i class="fa-solid fa-bars"></i></div>
+                <ul class="nav-list">
+                    <div class="close"><i class="fa-solid fa-square-xmark"></i></div>
+                    <a class="nav-elem" href="#home">HOME</a>
+                    <a class="nav-elem" href="#about">ABOUT</a>
+                    <a class="nav-elem" href="#projects">PROJECTS</a>
+                    <a class="nav-elem" href="contact">CONTACT</a>
+                </ul>
+         </nav>
+         <div class="darkModeCol">
+             <div class="type">
+                <p>Light Mode</p> 
+                 <div class="icon-type">
+                    <i class="fa-solid fa-sun"></i>
+                 </div>
+             </div>
+             <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+         </div>
+     </header>
+ 
+
+     <!-- Home Section -->
+     <section id="home" class="home-section">
+         <div class="home-title title">Dark Mode</div>
+
+         <h2>Welcome to your website!</h2>
+     </section>
+
+     <section class="about-section" id="about">
+        <div class="title-about title">Undraw Ilustrations</div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-title">
+                    Front-end Development
+                </div>
+                <div class="image">
+                    <img src="./assets/webDev.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    Problem Solving
+                </div>
+                <div class="image">
+                    <img src="./assets/problemSolving.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    High Concept
+                </div>
+                <div class="image">
+                    <img src="./assets/conceptualIdea.svg" alt="">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="project-section" id="projects">
+         <div class="projects-title title">
+             Buttons
+         </div>
+         <div class="container-buttons">
+             <button class="primary">Primary</button>
+             <button class="secondary">Secondary</button>
+             <button class="disabled" disabled>Disabled</button>
+             <button class="outline">Outline</button>
+             <button class="alt-outline">Alt Outline</button>
+             <button class="disabled-outline" disabled>Disabled</button>
+         </div>
+
+         <div class="text-projects">
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Perferendis animi temporibus consequatur earum,
+              alias culpa non quos fuga, voluptate quas impedit magnam ex iusto! Cupiditate.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+               Porro quos numquam accusantium voluptates
+            harum ea atque repellat delectus quaerat officiis.
+         </div>
+     </section>
+
+     <section class="contact-section" id="contact">
+         <div class="container-contact">
+             <div class="elem"><i class="fa-brands fa-github"></i></div>
+             <div class="elem"><i class="fa-brands fa-instagram"></i></div>
+             <div class="elem"><i class="fa-brands fa-youtube"></i></div>
+             <div class="elem"><i class="fa-brands fa-linkedin-in"></i></div>
+             <div class="elem"><i class="fa-brands fa-pinterest-p"></i></div>
+            </div>
+     </section>
+    <script src="script.js"></script>
+</body>
+</html>
