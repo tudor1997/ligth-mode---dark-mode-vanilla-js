@@ -12,16 +12,17 @@
     --background-color: #fff;
     --second-bg: #000;
     --hover-btn: rgb(243, 106, 106);
-    
+    --hover-elem: #111;
 }
 
 [data-theme="dark"] {
     --primary-color: rgb(114, 14, 236);
     --secondary-color: #03dac6;
     --header-color: #6c64ff;
-    --background-color: #000;
+    --background-color: rgb(29, 29, 29);
     --second-bg: #fff;
     --hover-btn:rgb(159, 87, 248);
+    --hover-elem: #fff;
 }
 
 body{
@@ -65,12 +66,13 @@ header{
             left: 0;
             display: flex;
             flex-direction: column;
+            
             width: 100vw;
             height: 100vh;
             z-index: 10;
             justify-content: space-evenly;
             align-items: center;
-            background-color: rgb(255, 255, 255);
+            background-color: var(--background-color);
             transition: .3s ease;
             .close{
                 position: absolute;
@@ -94,7 +96,7 @@ header{
                 transition: .2s ease-in;
                 &:hover{
                     text-decoration: underline;
-                    color: #111;
+                    color: var(--hover-elem);
                 }
             }
         }
