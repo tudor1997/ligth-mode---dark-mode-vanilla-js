@@ -14,15 +14,17 @@
   --background-color: #fff;
   --second-bg: #000;
   --hover-btn: rgb(243, 106, 106);
+  --hover-elem: #111;
 }
 
 [data-theme="dark"] {
   --primary-color: rgb(114, 14, 236);
   --secondary-color: #03dac6;
   --header-color: #6c64ff;
-  --background-color: #000;
+  --background-color: rgb(29, 29, 29);
   --second-bg: #fff;
   --hover-btn:rgb(159, 87, 248);
+  --hover-elem: #fff;
 }
 
 body {
@@ -99,7 +101,7 @@ header .navbar .nav-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
+  background-color: var(--background-color);
   -webkit-transition: .3s ease;
   transition: .3s ease;
 }
@@ -133,7 +135,7 @@ header .navbar .nav-list .nav-elem {
 
 header .navbar .nav-list .nav-elem:hover {
   text-decoration: underline;
-  color: #111;
+  color: var(--hover-elem);
 }
 
 @media (min-width: 680px) {
